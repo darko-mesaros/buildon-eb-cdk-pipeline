@@ -1,7 +1,7 @@
 var express = require('express');
 var app = express();
 var fs = require('fs');
-var port = 80;
+var port = 8080;
 /*global html*/
 
 // new code
