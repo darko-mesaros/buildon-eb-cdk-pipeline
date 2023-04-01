@@ -37,7 +37,7 @@ export class EBApplnStack extends cdk.Stack {
 
     const managedPolicy = iam.ManagedPolicy.fromAwsManagedPolicyName('AWSElasticBeanstalkWebTier')
     myRole.addManagedPolicy(managedPolicy);
-    myRole.addManagedPolicy(iam.ManagedPolicy.fromAwsManagedPolicyName('AmazonSSMRoleForInstancesQuickSetup'));
+    myRole.addManagedPolicy(iam.ManagedPolicy.fromAwsManagedPolicyName('AmazonSSMManagedInstanceCore'));
 
     const myProfileName = `${appName}-InstanceProfile`
 
